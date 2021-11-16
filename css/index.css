@@ -44,6 +44,7 @@ body.lock {
   font-size: 60px;
   line-height: 1.5;
   text-align: center;
+  cursor: default;
 }
 
 @media screen and (max-width: 640px) {
@@ -73,6 +74,7 @@ body.lock {
   font-weight: 500;
   font-size: 25px;
   line-height: 1.4;
+  cursor: default;
   color: #e5e5e580;
   text-align: center;
 }
@@ -551,6 +553,7 @@ body.lock {
   font-weight: 600;
   font-size: 45px;
   line-height: 1.48;
+  cursor: default;
   max-width: 50%;
 }
 
@@ -867,6 +870,7 @@ body.lock {
 }
 
 .c-review__title {
+  cursor: pointer;
   font-weight: 600;
   font-size: 50px;
   line-height: 1.5;
@@ -1102,6 +1106,7 @@ body.lock {
 
 .c-form__title {
   font-weight: 600;
+  cursor: default;
   font-size: 50px;
   line-height: 1.5;
   color: #ffffff;
@@ -1259,6 +1264,7 @@ body.lock {
 }
 
 .e-location__title {
+  cursor: default;
   font-weight: 600;
   font-size: 50px;
   line-height: 1.5;

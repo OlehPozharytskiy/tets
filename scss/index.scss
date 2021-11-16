@@ -36,6 +36,7 @@ body {
     font-size: 60px;
     line-height: 1.5;
     text-align: center;
+    cursor: default;
     @media screen and (max-width: 640px) {
       font-size: 35px;
     }
@@ -57,6 +58,7 @@ body {
     font-weight: 500;
     font-size: 25px;
     line-height: 1.4;
+    cursor: default;
     color: #e5e5e580;
     text-align: center;
     @media screen and (max-width: 640px) {
@@ -425,6 +427,7 @@ body {
     font-weight: 600;
     font-size: 45px;
     line-height: 1.48;
+    cursor: default;
     max-width: 50%;
     @media screen and (max-width: 1150px) {
       max-width: unset;
@@ -659,6 +662,7 @@ body {
     }
   }
   &__title {
+    cursor: pointer;
     font-weight: 600;
     font-size: 50px;
     line-height: 1.5;
@@ -837,6 +841,7 @@ body {
 .c-form {
   &__title {
     font-weight: 600;
+    cursor: default;
     font-size: 50px;
     line-height: 1.5;
     color: #ffffff;
@@ -949,6 +954,7 @@ body {
     }
   }
   &__title {
+    cursor: default;
     font-weight: 600;
     font-size: 50px;
     line-height: 1.5;
