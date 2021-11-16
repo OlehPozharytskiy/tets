@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon -->
+    <link rel="icon" href="./assets/icons/common/logo.svg" />
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <title>Exam 2</title>
+  </head>
+  <body>
+    <!-- Start header -->
+
+    <header class="c-header">
+      <div class="c-header__wrapper">
+        <!--! Start element logo -->
+        <div class="e-logo">
+          <div class="e-logo__wrapper">
+            <!-- Start link -->
+            <a class="e-logo__link" href="#"
+              ><svg
+                class="e-logo__svg"
+                width="264"
+                height="83"
+                viewbox="0 0 264 83"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.25 23.9C19.95 23.9 23.1833 24.6333 25.95 26.1C28.7167 27.5667 30.85 29.6333 32.35 32.3C33.8833 34.9333 34.65 37.9833 34.65 41.45C34.65 44.8833 33.8833 47.9333 32.35 50.6C30.85 53.2667 28.7 55.3333 25.9 56.8C23.1333 58.2667 19.9167 59 16.25 59H3.1V23.9H16.25ZM15.7 51.6C18.9333 51.6 21.45 50.7167 23.25 48.95C25.05 47.1833 25.95 44.6833 25.95 41.45C25.95 38.2167 25.05 35.7 23.25 33.9C21.45 32.1 18.9333 31.2 15.7 31.2H11.65V51.6H15.7ZM37.7281 45C37.7281 42.1333 38.2615 39.6167 39.3281 37.45C40.4281 35.2833 41.9115 33.6167 43.7781 32.45C45.6448 31.2833 47.7281 30.7 50.0281 30.7C51.9948 30.7 53.7115 31.1 55.1781 31.9C56.6781 32.7 57.8281 33.75 58.6281 35.05V31.1H67.1781V59H58.6281V55.05C57.7948 56.35 56.6281 57.4 55.1281 58.2C53.6615 59 51.9448 59.4 49.9781 59.4C47.7115 59.4 45.6448 58.8167 43.7781 57.65C41.9115 56.45 40.4281 54.7667 39.3281 52.6C38.2615 50.4 37.7281 47.8667 37.7281 45ZM58.6281 45.05C58.6281 42.9167 58.0281 41.2333 56.8281 40C55.6615 38.7667 54.2281 38.15 52.5281 38.15C50.8281 38.15 49.3781 38.7667 48.1781 40C47.0115 41.2 46.4281 42.8667 46.4281 45C46.4281 47.1333 47.0115 48.8333 48.1781 50.1C49.3781 51.3333 50.8281 51.95 52.5281 51.95C54.2281 51.95 55.6615 51.3333 56.8281 50.1C58.0281 48.8667 58.6281 47.1833 58.6281 45.05ZM81.9137 35.75C82.9137 34.2167 84.1637 33.0167 85.6637 32.15C87.1637 31.25 88.8303 30.8 90.6637 30.8V39.85H88.3137C86.1803 39.85 84.5803 40.3167 83.5137 41.25C82.447 42.15 81.9137 43.75 81.9137 46.05V59H73.3637V31.1H81.9137V35.75ZM111.8 59L103.3 47.3V59H94.7504V22H103.3V42.45L111.75 31.1H122.3L110.7 45.1L122.4 59H111.8ZM157.754 59L150.604 48.25L144.304 59H134.604L145.854 41.15L134.354 23.9H144.304L151.354 34.5L157.554 23.9H167.254L156.104 41.6L167.704 59H157.754Z"
+                  fill="white"
+                />
+                <path
+                  d="M251.845 70.8449C247.689 75.0012 242.697 78.2272 237.2 80.3093C231.703 82.3913 225.827 83.282 219.96 82.9222C214.093 82.5624 208.37 80.9605 203.168 78.2224C197.967 75.4844 193.407 71.6726 189.79 67.0397C186.172 62.4067 183.58 57.0581 182.185 51.3481C180.791 45.6381 180.625 39.6969 181.698 33.918C182.772 28.139 185.062 22.6541 188.415 17.8263C191.768 12.9986 196.108 8.93827 201.148 5.9141L211.824 23.7071C209.304 25.2191 207.134 27.2493 205.457 29.6632C203.781 32.077 202.636 34.8195 202.099 37.709C201.562 40.5985 201.645 43.569 202.343 46.424C203.04 49.279 204.336 51.9533 206.145 54.2698C207.953 56.5863 210.234 58.4922 212.834 59.8612C215.435 61.2302 218.297 62.0312 221.23 62.2111C224.163 62.391 227.102 61.9457 229.85 60.9046C232.598 59.8636 235.094 58.2506 237.172 56.1725L251.845 70.8449Z"
+                  fill="#8A79FF"
+                />
+                <path
+                  d="M222.5 83C229.325 83 236.044 81.3169 242.063 78.0997C248.082 74.8826 253.214 70.2307 257.006 64.5562C260.797 58.8816 263.131 52.3596 263.8 45.5677C264.469 38.7759 263.453 31.9239 260.841 25.6186C258.229 19.3134 254.103 13.7496 248.827 9.42007C243.552 5.09051 237.29 2.12885 230.596 0.797414C223.903 -0.534022 216.984 -0.194132 210.453 1.78698C203.922 3.76809 197.6 7.47 193.155 12.1551L205.9 14.94L207.827 26.8275C210.24 24.4146 213.211 22.634 216.476 21.6435C219.742 20.6529 223.201 20.483 226.548 21.1487C229.895 21.8144 233.026 23.2953 235.664 25.46C238.301 27.6248 240.364 30.4067 241.67 33.5593C242.976 36.7119 243.484 40.1379 243.15 43.5339C242.815 46.9298 241.649 50.1908 239.753 53.0281C237.857 55.8654 235.291 58.1913 232.281 59.7999C229.272 61.4084 225.912 62.25 222.5 62.25L232.281 71.38L222.5 83Z"
+                  fill="url(#paint0_linear_263:4)"
+                />
+                <defs>
+                  <lineargradient
+                    id="paint0_linear_263:4"
+                    x1="222.5"
+                    y1="0"
+                    x2="222.5"
+                    y2="83"
+                    gradientunits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#CE4DA4" />
+                    <stop offset="1" stop-color="#CE4DA4" />
+                  </lineargradient>
+                </defs>
+              </svg>
+            </a>
+            <!-- End link -->
+          </div>
+        </div>
+
+        <!--! End element logo -->
+        <button class="e-header__burger"><span></span></button>
+        <div class="c-header__menu">
+          <!--! Start Navigation -->
+          <nav class="e-navigation">
+            <div class="e-navigation__wrapper">
+              <ul class="e-navigation__links">
+                <li>
+                  <a href="#"><span>Home</span></a>
+                </li>
+                <li>
+                  <a href="#trading"><span>Trading</span></a>
+                </li>
+                <li>
+                  <a href="#started"><span>Start</span></a>
+                </li>
+                <li>
+                  <a href="#calback"><span>Callback</span></a>
+                </li>
+                <li>
+                  <a href="#office"><span>Office</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!--! End Navigation -->
+
+          <!-- ! Start sing in block -->
+          <div class="c-singin">
+            <div class="c-singin__wrapper">
+              <a class="c-singin__link" href="#"><span>sing in</span></a>
+              <!-- ! Start button  -->
+              <div class="e-button">
+                <div class="e-button__wrapper">
+                  <button
+                    class="e-button__item"
+                    name="Get Started"
+                    type="button"
+                  >
+                    <span>Get Started</span>
+                  </button>
+                </div>
+              </div>
+              <!-- ! End button -->
+            </div>
+          </div>
+
+          <!-- ! End sing in block -->
+        </div>
+      </div>
+    </header>
+    <!-- End header -->
+
+    <div class="c-inner">
+      <div class="c-inner__wrapper">
+        <!-- Start getstarter information block -->
+        <div class="c-information">
+          <div class="c-information__wrapper">
+            <h2 class="c-information__title">
+              Next-Gen Investing App
+              <span class="c-information__title--gradient"
+                >for modern investors</span
+              >
+            </h2>
+            <p class="c-information__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              aliquam quam viverra purus tellus purus. Convallis fusce
+            </p>
+            <div class="c-information__buttons">
+              <!--  Start button get -->
+              <div class="e-button-get">
+                <div class="e-button-get__wrapper">
+                  <button
+                    class="e-button-get__item"
+                    name="Get Started"
+                    type="button"
+                  >
+                    <span>Get Started</span>
+                  </button>
+                </div>
+              </div>
+              <!--  End button get -->
+              <!--  Start button browse -->
+              <div class="e-button-get">
+                <div class="e-button-get__wrapper">
+                  <button
+                    class="e-button-get__item e-button-get__item--browse"
+                    name="Browse Features"
+                    type="button"
+                  >
+                    <span>Browse Features</span>
+                  </button>
+                </div>
+              </div>
+              <!--  End button browse -->
+            </div>
+          </div>
+        </div>
+        <!-- End getstarter information block -->
+
+        <!-- Start banner -->
+        <div class="e-banner">
+          <div class="e-banner__wrapper">
+            <img
+              class="e-banner__chart"
+              src="./assets/images/Chart.png"
+              alt="Charts"
+            />
+            <img
+              class="e-banner__ellipce-blue"
+              src="./assets/images/Ellipse 2.png"
+              alt="Blue Ellipse"
+            />
+            <img
+              class="e-banner__ellipce-red"
+              src="./assets/images/Ellipse 1.png"
+              alt="Blue Ellipse"
+            />
+          </div>
+        </div>
+        <!-- End banner -->
+        <!-- Start trading items -->
+        <div class="c-trading">
+          <div class="c-trading__wrapper">
+            <!-- Trading card -->
+            <div class="e-card">
+              <div class="e-card__wrapper">
+                <div class="e-card__svg">
+                  <svg
+                    width="60"
+                    height="80"
+                    viewbox="0 0 60 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M32.9086 22.9722L32.9124 23.6711C32.9124 26.5756 32.697 29.2236 32.3724 30.9499L32.0881 32.0233C31.9299 32.5918 31.722 33.2391 31.5052 33.5696C30.7115 34.7784 29.1597 35.5262 27.4988 35.5262H27.3543C26.2716 35.498 23.9971 34.7479 23.9971 34.7218C20.3371 33.5095 13.2761 29.8505 10.015 27.2419L9.06732 26.4588C8.81916 26.2465 8.54035 25.9953 8.36726 25.7995C7.78909 25.1951 7.5 24.4472 7.5 23.6994C7.5 22.8645 7.82454 22.0884 8.43817 21.4536L9.41182 20.624L9.62997 20.447C12.589 17.9142 20.3153 13.7726 24.3571 12.5051L24.9673 12.3205C25.7016 12.1127 26.7304 11.8649 27.3543 11.842C28.1479 11.842 28.9061 11.9877 29.6288 12.2747C30.5315 12.6769 31.2515 13.3117 31.6497 14.0596C31.9033 14.577 32.3015 16.1315 32.3015 16.1597C32.6665 17.7271 32.8782 20.2002 32.9086 22.9722ZM52.5 23.685C52.5 25.3395 50.8173 26.6809 48.7419 26.6809L39.4938 26.0352C37.8656 26.0352 36.5456 24.9829 36.5456 23.685C36.5456 22.3849 37.8656 21.3349 39.4938 21.3349L48.7419 20.6892C50.8173 20.6892 52.5 22.0306 52.5 23.685Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M27.0914 55.3406L27.0876 56.0395C27.0876 58.9441 27.303 61.5921 27.6276 63.3183L27.9119 64.3917C28.0701 64.9602 28.278 65.6075 28.4948 65.938C29.2885 67.1468 30.8403 67.8947 32.5012 67.8947H32.6457C33.7284 67.8664 36.0029 67.1163 36.0029 67.0903C39.6629 65.8779 46.7239 62.2189 49.985 59.6103L50.9327 58.8272C51.1808 58.6149 51.4596 58.3637 51.6327 58.1679C52.2109 57.5635 52.5 56.8156 52.5 56.0678C52.5 55.2329 52.1755 54.4568 51.5618 53.822L50.5882 52.9924L50.37 52.8154C47.411 50.2826 39.6847 46.141 35.6429 44.8735L35.0327 44.6889C34.2984 44.4811 33.2696 44.2333 32.6457 44.2104C31.8521 44.2104 31.0939 44.3561 30.3712 44.6431C29.4685 45.0453 28.7485 45.6801 28.3503 46.428C28.0967 46.9454 27.6985 48.4999 27.6985 48.5281C27.3335 50.0955 27.1218 52.5686 27.0914 55.3406ZM7.5 56.0534C7.5 57.7079 9.1827 59.0493 11.2581 59.0493L20.5062 58.4036C22.1344 58.4036 23.4544 57.3513 23.4544 56.0534C23.4544 54.7533 22.1344 53.7033 20.5062 53.7033L11.2581 53.0576C9.1827 53.0576 7.5 54.399 7.5 56.0534Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <h3 class="e-card__title">Real Time Trading</h3>
+                <p class="e-card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+            <!-- ... -->
+            <!-- Trading card -->
+            <div class="e-card">
+              <div class="e-card__wrapper">
+                <div class="e-card__svg">
+                  <svg
+                    width="44"
+                    height="53"
+                    viewbox="0 0 44 53"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect y="17" width="8" height="36" rx="4" fill="white" />
+                    <rect
+                      x="36"
+                      y="34"
+                      width="8"
+                      height="19"
+                      rx="4"
+                      fill="white"
+                    />
+                    <rect x="18" width="8" height="53" rx="4" fill="white" />
+                  </svg>
+                </div>
+                <h3 class="e-card__title">Real Time Trading</h3>
+                <p class="e-card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+            <!-- ... -->
+            <!-- Trading card -->
+            <div class="e-card">
+              <div class="e-card__wrapper">
+                <div class="e-card__svg">
+                  <svg
+                    width="60"
+                    height="60"
+                    viewbox="0 0 60 60"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_21_130)">
+                      <path
+                        d="M55.1433 15.4489C55.1125 13.829 55.0831 12.2987 55.0831 10.8182C55.0831 9.65836 54.1431 8.71805 52.9829 8.71805C44.0013 8.71805 37.1629 6.13682 31.4628 0.594659C30.6474 -0.19836 29.3498 -0.19808 28.5346 0.594659C22.8351 6.13682 15.9978 8.71805 7.01672 8.71805C5.85687 8.71805 4.91656 9.65836 4.91656 10.8182C4.91656 12.299 4.88744 13.8298 4.85636 15.45C4.5685 30.5252 4.17423 51.1714 29.3108 59.8842C29.5337 59.9615 29.7661 60.0002 29.9986 60.0002C30.231 60.0002 30.4637 59.9615 30.6863 59.8842C55.8249 51.1711 55.4312 30.5244 55.1433 15.4489ZM29.9988 55.6713C8.4409 47.84 8.76685 30.6845 9.05611 15.5301C9.07347 14.6206 9.09027 13.7391 9.10203 12.875C17.5139 12.5199 24.2405 9.97087 29.9988 4.95458C35.7577 9.97087 42.4855 12.5202 50.8979 12.875C50.9097 13.7388 50.9265 14.6198 50.9438 15.5287C51.2328 30.6837 51.5585 47.8397 29.9988 55.6713Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M37.2309 22.7046L27.0945 32.8405L22.769 28.515C21.9488 27.6951 20.619 27.6951 19.7991 28.515C18.9789 29.3355 18.9789 30.665 19.7991 31.4852L25.6095 37.2956C26.0195 37.7056 26.5571 37.9106 27.0945 37.9106C27.6318 37.9106 28.1695 37.7056 28.5794 37.2956L40.2006 25.6748C41.021 24.8546 41.021 23.5248 40.2008 22.7049C39.3809 21.8847 38.0511 21.8844 37.2309 22.7046Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clippath id="clip0_21_130">
+                        <rect width="60" height="60" fill="white" />
+                      </clippath>
+                    </defs>
+                  </svg>
+                </div>
+                <h3 class="e-card__title">Real Time Trading</h3>
+                <p class="e-card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+            <!-- ... -->
+            <!-- Trading card -->
+            <div class="e-card">
+              <div class="e-card__wrapper">
+                <div class="e-card__svg">
+                  <svg
+                    width="60"
+                    height="60"
+                    viewbox="0 0 60 60"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M52.2334 5.7967H58.1569V52.8146H52.2334V5.7967ZM40.4384 7.49845L39.6182 7.75324C38.5915 8.07774 37.3847 7.62584 36.9696 6.76578C36.7706 6.34937 36.7611 5.88923 36.9436 5.46839C37.1553 4.98163 37.6053 4.60071 38.1763 4.42262L47.4241 1.54199L48.5498 9.78203C48.6131 10.2016 48.4952 10.6301 48.217 10.985C47.8767 11.421 47.3297 11.7037 46.7162 11.762C46.6427 11.7696 46.5603 11.7734 46.481 11.7734C45.4346 11.7734 44.546 11.1067 44.4142 10.2244L44.2716 8.97774C33.5838 23.7764 8.97271 39.6372 7.90476 40.3204C7.54223 40.5524 7.10871 40.676 6.64984 40.676C6.03125 40.676 5.44942 40.4478 5.05456 40.0479C4.69139 39.6822 4.52153 39.2157 4.57414 38.7366C4.62928 38.239 4.9278 37.7814 5.39428 37.4848C5.64463 37.3238 30.0212 21.5657 40.4384 7.49845ZM47.4457 16.2398V52.8133H41.5234V16.2398H47.4457ZM37.0887 27.1076V52.8146H31.1646V27.1076H37.0887ZM26.3769 38.3975V52.8127H20.454V38.3975H26.3769ZM15.0528 44.0453V52.8133H9.13053V44.0453H15.0528ZM59.9994 58.4579H0V54.0631H60L59.9994 58.4579Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <h3 class="e-card__title">Real Time Trading</h3>
+                <p class="e-card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+            <!-- ... -->
+            <!-- Trading card -->
+            <div class="e-card">
+              <div class="e-card__wrapper">
+                <div class="e-card__svg">
+                  <svg
+                    width="60"
+                    height="60"
+                    viewbox="0 0 60 60"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M30.0124 5C36.7122 5 42.2204 10.2648 42.5 16.9358H42.4347C42.4425 17.1297 42.4053 17.3228 42.3258 17.5H42.7161C45.7587 17.5 48.9446 19.6088 50.2221 24.6995L50.3609 25.3002L52.2832 40.7868C53.6665 50.6644 48.2624 54.8182 40.8905 54.9941L40.3962 55H19.6713C12.1794 55 6.40636 52.2699 7.6757 41.4589L7.76226 40.7868L9.7066 25.3002C10.6654 19.818 13.884 17.6556 16.9853 17.5082L17.3293 17.5H17.5247C17.4918 17.3134 17.4918 17.1224 17.5247 16.9358C17.8043 10.2648 23.3125 5 30.0124 5ZM22.7425 25.8232C21.5222 25.8232 20.533 26.8414 20.533 28.0973C20.533 29.3533 21.5222 30.3714 22.7425 30.3714C23.9628 30.3714 24.952 29.3533 24.952 28.0973L24.9348 27.8121C24.7984 26.6908 23.8689 25.8232 22.7425 25.8232ZM37.2145 25.8232C35.9943 25.8232 35.0051 26.8414 35.0051 28.0973C35.0051 29.3533 35.9943 30.3714 37.2145 30.3714C38.4348 30.3714 39.424 29.3533 39.424 28.0973C39.424 26.8414 38.4348 25.8232 37.2145 25.8232ZM29.9144 8.25596C25.1041 8.25596 21.2046 12.1421 21.2046 16.9358C21.2376 17.1224 21.2376 17.3134 21.2046 17.5H38.733C38.6634 17.3199 38.6266 17.1288 38.6242 16.9358C38.6242 12.1421 34.7247 8.25596 29.9144 8.25596Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <h3 class="e-card__title">Real Time Trading</h3>
+                <p class="e-card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+            <!-- ... -->
+            <!-- Trading card -->
+            <div class="e-card">
+              <div class="e-card__wrapper">
+                <div class="e-card__svg">
+                  <svg
+                    width="60"
+                    height="60"
+                    viewbox="0 0 60 60"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_21_87)">
+                      <path
+                        d="M59.0943 37.2602C55.0893 53.3352 38.8118 63.1102 22.7393 59.1002C6.67428 55.1252 -3.11071 38.8127 0.904286 22.7627C4.90428 6.67522 21.1868 -3.10728 37.2493 0.895224C53.3243 4.90772 63.1043 21.1827 59.0943 37.2652V37.2602ZM43.2193 25.7277C43.8193 21.7527 40.7843 19.6027 36.6193 18.1527L37.9693 12.7702L34.6818 11.9452L33.3693 17.2127C32.5068 16.9952 31.6068 16.7952 30.7093 16.5877L32.0243 11.2702L28.7243 10.4452L27.3743 15.8577C26.6618 15.6902 25.9618 15.5277 25.2743 15.3577L20.7368 14.2327L19.8618 17.7502C19.8618 17.7502 22.2993 18.3127 22.2493 18.3402C23.5868 18.6802 23.8243 19.5552 23.7868 20.2552L20.0943 35.0552C19.9068 35.4702 19.4943 36.0702 18.5593 35.8402C18.5968 35.8902 16.1593 35.2402 16.1593 35.2402L14.5093 39.0152L18.7843 40.0802L21.1093 40.6852L19.7593 46.1602L23.0593 46.9777L24.4093 41.5527C25.3093 41.8027 26.1718 42.0277 27.0343 42.2352L25.7593 47.6202L29.0593 48.4452L30.4218 42.9702C36.0218 44.0377 40.2468 43.6127 42.0218 38.5352C43.4468 34.4427 41.9468 32.0852 38.9793 30.5452C41.1143 30.0627 42.7293 28.6452 43.1793 25.7202H43.2043L43.2193 25.7277ZM35.6943 36.2777C34.6843 40.3777 27.8018 38.1527 25.5693 37.6027L27.3693 30.3527C29.6093 30.9277 36.7618 32.0277 35.6943 36.2777ZM36.7193 25.6777C35.7943 29.4027 30.0643 27.5152 28.2068 27.0527L29.8418 20.4527C31.7018 20.9027 37.6843 21.7627 36.7168 25.6627V25.6777H36.7193Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clippath id="clip0_21_87">
+                        <rect width="60" height="60" fill="white" />
+                      </clippath>
+                    </defs>
+                  </svg>
+                </div>
+                <h3 class="e-card__title">Real Time Trading</h3>
+                <p class="e-card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+            <!-- ... -->
+
+            <div class="c-trading__buttons" id="trading">
+              <!--  Start button get -->
+              <div class="e-button-get">
+                <div class="e-button-get__wrapper">
+                  <button
+                    class="e-button-get__item"
+                    name="Get Started"
+                    type="button"
+                  >
+                    <span>Get Started</span>
+                  </button>
+                </div>
+              </div>
+              <!--  End button get -->
+              <!--  Start button browse -->
+              <div class="e-button-get">
+                <div class="e-button-get__wrapper">
+                  <button
+                    class="e-button-get__item e-button-get__item--browse"
+                    name="Browse Features"
+                    type="button"
+                  >
+                    <span>Browse Features</span>
+                  </button>
+                </div>
+              </div>
+              <!--  End button browse -->
+            </div>
+          </div>
+          <!-- End trading items -->
+        </div>
+        <!-- End trading items -->
+        <!-- Start info -->
+        <div class="c-info">
+          <div class="c-info__wrapper">
+            <div class="c-info__content">
+              <h2>Real-Time Trading Like Never Before.</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Malesuada sit feugiat etiam risus, massa sit.
+              </p>
+              <div class="c-blank">
+                <div class="e-card__svg">
+                  <svg
+                    width="50"
+                    height="50"
+                    viewbox="0 0 50 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M25 0C11.1826 0 0 11.1814 0 25C0 38.8175 11.1814 50 25 50C38.8176 50 50 38.8186 50 25C50 11.1824 38.8186 0 25 0ZM26.2317 26.0359L19.4173 34.1378C18.8451 34.8181 17.8296 34.9056 17.1496 34.3335C16.4694 33.7613 16.3817 32.7461 16.9539 32.0659L23.3906 24.4131V6.22607C23.3906 5.33725 24.1112 4.61666 25 4.61666C25.8888 4.61666 26.6094 5.33725 26.6094 6.22607V25C26.6094 25.379 26.4756 25.7459 26.2317 26.0359Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="c-blank__text">
+                  <p>1 Sec Operations</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Malesuada sit feugiat etiam risus, massa sit.
+                  </p>
+                </div>
+              </div>
+              <div class="c-blank">
+                <div class="e-card__svg">
+                  <svg
+                    width="60"
+                    height="60"
+                    viewbox="0 0 60 60"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M55 30C55 43.8071 43.8071 55 30 55C16.1929 55 5 43.8071 5 30C5 16.1929 16.1929 5 30 5C43.8071 5 55 16.1929 55 30ZM20.2773 39.7228C19.7891 39.2346 19.7891 38.4433 20.2773 37.955L28.2323 30.0001L20.2773 22.0451C19.7891 21.5569 19.7891 20.7655 20.2773 20.2773C20.7654 19.7891 21.5569 19.7891 22.045 20.2773L30 28.2323L37.955 20.2774C38.4431 19.7893 39.2346 19.7893 39.7228 20.2774C40.2109 20.7655 40.2109 21.557 39.7228 22.0451L31.7678 30.0001L39.7228 37.955C40.2109 38.4431 40.2109 39.2346 39.7228 39.7228C39.2345 40.2109 38.4431 40.2109 37.955 39.7228L30 31.7679L22.0451 39.7228C21.5569 40.211 20.7655 40.211 20.2773 39.7228Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="c-blank__text">
+                  <p>256-Bit AES Encryption</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Malesuada sit feugiat etiam risus, massa sit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="c-info__image c-info__image--oder">
+              <img src="./assets/images/info_image_1.png" alt="" />
+            </div>
+            <div class="c-info__image">
+              <img src="./assets/images/info_image_2.png" alt="" />
+            </div>
+            <div class="c-info__content">
+              <h2>Built-in Enterprise Encryption and Security</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Malesuada sit feugiat etiam risus, massa sit.
+              </p>
+              <div class="c-blank">
+                <div class="e-card__svg">
+                  <svg
+                    width="50"
+                    height="50"
+                    viewbox="0 0 50 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M25 0C11.1826 0 0 11.1814 0 25C0 38.8175 11.1814 50 25 50C38.8176 50 50 38.8186 50 25C50 11.1824 38.8186 0 25 0ZM26.2317 26.0359L19.4173 34.1378C18.8451 34.8181 17.8296 34.9056 17.1496 34.3335C16.4694 33.7613 16.3817 32.7461 16.9539 32.0659L23.3906 24.4131V6.22607C23.3906 5.33725 24.1112 4.61666 25 4.61666C25.8888 4.61666 26.6094 5.33725 26.6094 6.22607V25C26.6094 25.379 26.4756 25.7459 26.2317 26.0359Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="c-blank__text">
+                  <p>256-Bit AES Encryption</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Malesuada sit feugiat etiam risus, massa sit.
+                  </p>
+                </div>
+              </div>
+              <div class="c-blank">
+                <div class="e-card__svg">
+                  <svg
+                    width="60"
+                    height="60"
+                    viewbox="0 0 60 60"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M55 30C55 43.8071 43.8071 55 30 55C16.1929 55 5 43.8071 5 30C5 16.1929 16.1929 5 30 5C43.8071 5 55 16.1929 55 30ZM20.2773 39.7228C19.7891 39.2346 19.7891 38.4433 20.2773 37.955L28.2323 30.0001L20.2773 22.0451C19.7891 21.5569 19.7891 20.7655 20.2773 20.2773C20.7654 19.7891 21.5569 19.7891 22.045 20.2773L30 28.2323L37.955 20.2774C38.4431 19.7893 39.2346 19.7893 39.7228 20.2774C40.2109 20.7655 40.2109 21.557 39.7228 22.0451L31.7678 30.0001L39.7228 37.955C40.2109 38.4431 40.2109 39.2346 39.7228 39.7228C39.2345 40.2109 38.4431 40.2109 37.955 39.7228L30 31.7679L22.0451 39.7228C21.5569 40.211 20.7655 40.211 20.2773 39.7228Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="c-blank__text">
+                  <p>256-Bit AES Encryption</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Malesuada sit feugiat etiam risus, massa sit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End info -->
+
+        <!-- Start register on account block -->
+        <div class="c-register">
+          <div class="c-register__wrapper">
+            <div class="c-register__banner">
+              <h2 class="c-register__title">
+                Create your account and start trading today
+              </h2>
+              <div class="c-register__buttons">
+                <!--  Start button get -->
+                <div class="e-button-reg">
+                  <div class="e-button-reg__wrapper">
+                    <button
+                      class="e-button-reg__item"
+                      name="Get Started"
+                      type="button"
+                    >
+                      <span>Get Started</span>
+                    </button>
+                  </div>
+                </div>
+                <!--  End button get -->
+                <!--  Start button get -->
+                <div class="e-button-reg">
+                  <div id="started" class="e-button-reg__wrapper">
+                    <button
+                      class="e-button-reg__item"
+                      name="View Pricing"
+                      type="button"
+                    >
+                      <span>View Pricing</span>
+                    </button>
+                  </div>
+                </div>
+                <!--  End button get -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End register on account block -->
+
+        <!-- Start how to get started -->
+        <div class="c-steps">
+          <div class="c-steps__wrapper">
+            <div class="c-steps__start">
+              <h2>How to get started</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                ipsum risus urna at. Curabitur non lectus eget magna.
+              </p>
+              <div class="e-button">
+                <div class="e-button__wrapper">
+                  <button
+                    class="e-button__item"
+                    name="Get Started"
+                    type="button"
+                  >
+                    <span>Get Started</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="c-steps__step">
+              <div class="e-step-cart">
+                <div class="e-step-cart__wrapper">
+                  <div class="e-step-cart__text">
+                    <span>1</span>
+                    <h3>Create your account</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, elit. Imperdiet at at varius
+                      commodo pharetra odio sollicitudin.
+                    </p>
+                  </div>
+                  <div class="e-step-cart__phone">
+                    <img src="./assets/images/phone.png" alt="phone" />
+                  </div>
+                </div>
+              </div>
+              <div class="e-step-cart">
+                <div class="e-step-cart__wrapper">
+                  <div class="e-step-cart__text">
+                    <span>2</span>
+                    <h3>Create your account</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, elit. Imperdiet at at varius
+                      commodo pharetra odio sollicitudin.
+                    </p>
+                  </div>
+                  <div class="e-step-cart__phone e-step-cart__phone--tablet">
+                    <img src="./assets/images/tablet.png" alt="tablet" />
+                  </div>
+                </div>
+              </div>
+              <div class="e-step-cart">
+                <div class="e-step-cart__wrapper">
+                  <div class="e-step-cart__text">
+                    <span>3</span>
+                    <h3>Create your account</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, elit. Imperdiet at at varius
+                      commodo pharetra odio sollicitudin.
+                    </p>
+                  </div>
+                  <div class="e-step-cart__phone e-step-cart__phone--phone2">
+                    <img src="./assets/images/phone2.png" alt="phone" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End how to get started -->
+
+        <!-- Start swiper -->
+        <div id="calback" class="c-review">
+          <div class="c-review__wrapper">
+            <h2 class="c-review__title">What our clients say</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="e-review">
+                    <div class="e-review__wrapper">
+                      <div class="e-review__context">
+                        <h3 class="e-review__title">
+                          “A truly next-gen trading app”
+                        </h3>
+                        <p class="e-review__text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Quisque rhoncus eget iaculis vitae elementum, in
+                          sagittis, hac.
+                        </p>
+                        <p class="e-review__name">Vishal Saklani</p>
+                        <p class="e-review__position">UI/UX Designer</p>
+                      </div>
+                      <div class="e-review__persona">
+                        <img
+                          class="e-review__img"
+                          src="./assets/images/persona_swiper.png"
+                          alt="man`s head"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="e-review">
+                    <div class="e-review__wrapper">
+                      <div class="e-review__context">
+                        <h3 class="e-review__title">
+                          “A truly next-gen trading app”
+                        </h3>
+                        <p class="e-review__text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Quisque rhoncus eget iaculis vitae elementum, in
+                          sagittis, hac.
+                        </p>
+                        <p class="e-review__name">Vishal Saklani</p>
+                        <p class="e-review__position">UI/UX Designer</p>
+                      </div>
+                      <div class="e-review__persona">
+                        <img
+                          class="e-review__img"
+                          src="./assets/images/persona_swiper.png"
+                          alt="man`s head"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="e-review">
+                    <div class="e-review__wrapper">
+                      <div class="e-review__context">
+                        <h3 class="e-review__title">
+                          “A truly next-gen trading app”
+                        </h3>
+                        <p class="e-review__text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Quisque rhoncus eget iaculis vitae elementum, in
+                          sagittis, hac.
+                        </p>
+                        <p class="e-review__name">Vishal Saklani</p>
+                        <p class="e-review__position">UI/UX Designer</p>
+                      </div>
+                      <div class="e-review__persona">
+                        <img
+                          class="e-review__img"
+                          src="./assets/images/persona_swiper.png"
+                          alt="man`s head"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-navigation">
+                <div class="arrow-left" id="swiperPrev">
+                  <img src="./assets/images/right.png" alt="arrow left" />
+                </div>
+                <div class="arrow-right" id="swiperNext">
+                  <img
+                    class="right"
+                    src="./assets/images/right.png"
+                    alt="arrow-right"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End swiper -->
+
+        <!-- Start form -->
+        <div class="c-form">
+          <div class="c-form__wrapper">
+            <h3 class="c-form__title">Recall</h3>
+            <form method="POST" class="c-form__feedback" action="#">
+              <!-- https://beetroot-solodkui.herokuapp.com/beetroot-solodkui/users/registration -->
+              <div class="c-form__data">
+                <div class="c-form__item">
+                  <label class="c-form__label" for="firstName"
+                    >First Name *</label
+                  >
+                  <input
+                    class="c-form__input"
+                    type="text"
+                    name="firstName"
+                    placeholder="Enter your name"
+                    required
+                    id="firstName"
+                  />
+                </div>
+                <div class="c-form__item">
+                  <label class="c-form__label" for="lastName"
+                    >Last Name *</label
+                  >
+                  <input
+                    class="c-form__input"
+                    type="text"
+                    name="lastName"
+                    placeholder="Enter your last name"
+                    required
+                    id="lastName"
+                  />
+                </div>
+                <div class="c-form__item c-form__item--email">
+                  <label class="c-form__label" for="email">Email *</label>
+                  <input
+                    class="c-form__input"
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                    id="email"
+                  />
+                </div>
+                <div class="c-form__item">
+                  <label class="c-form__label" for="username"
+                    >User name *</label
+                  >
+                  <input
+                    class="c-form__input"
+                    type="text"
+                    name="username"
+                    placeholder="Enter your username"
+                    required
+                    id="username"
+                  />
+                </div>
+                <div class="c-form__item">
+                  <label class="c-form__label" for="password">Password *</label>
+                  <input
+                    class="c-form__input"
+                    type="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    required
+                    id="password"
+                  />
+                </div>
+              </div>
+              <p class="c-form__error"></p>
+              <div class="c-form__submit">
+                <input
+                  class="c-form__buton"
+                  type="submit"
+                  name="submit"
+                  value="Submit"
+                  id="submit"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- End form -->
+
+        <!-- Start map -->
+        <div id="office" class="e-location">
+          <div class="e-location__wrapper">
+            <h3 class="e-location__title">Our ofice located</h3>
+            <!--The div element for the map -->
+            <div class="e-location__map" id="map"></div>
+          </div>
+        </div>
+        <!-- End map -->
+      </div>
+    </div>
+    <!-- Start footer -->
+    <footer class="c-footer">
+      <div class="c-footer__wrapper">
+        <div class="c-links">
+          <div class="c-links__pages">
+            <h3 class="c-links__title">Pages</h3>
+            <ul class="c-links__nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Blog Post</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Pricing Single</a></li>
+            </ul>
+          </div>
+          <div class="c-links__utility">
+            <h3 class="c-links__title">Utility Pages</h3>
+            <ul class="c-links__nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Blog Post</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </div>
+          <div class="c-links__subscribe">
+            <h3 class="c-links__title c-links__title--subscribe">
+              Subscribe to our newsletter
+            </h3>
+            <p class="c-links__text">
+              Lorem ipsum dolor sit amet, consect etur adipiscing elit ut
+              aliquam, purus sit amet luctus.
+            </p>
+            <form action="#" method="POST" class="e-form-min">
+              <input
+                class="e-form-min__mail"
+                type="email"
+                placeholder="Your email address"
+              />
+              <div class="e-form-min__button">
+                <button id="min_button" type="button">Subscribe</button>
+              </div>
+              <p class="e-form-min__error"></p>
+            </form>
+          </div>
+        </div>
+        <div class="c-copyr">
+          <div class="c-copyr__logo">
+            <a href="#">
+              <svg
+                width="269"
+                height="83"
+                viewbox="0 0 269 83"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M70.8449 70.8449C66.6886 75.0012 61.6968 78.2272 56.2 80.3093C50.7032 82.3913 44.8268 83.282 38.96 82.9222C33.0931 82.5624 27.3695 80.9605 22.1683 78.2224C16.9671 75.4844 12.4069 71.6726 8.78951 67.0396C5.17217 62.4067 2.58027 57.0581 1.18542 51.3481C-0.209419 45.6381 -0.375397 39.6969 0.698502 33.918C1.77239 28.139 4.06165 22.6541 7.4147 17.8263C10.7677 12.9986 15.1081 8.93827 20.1483 5.9141L30.8242 23.7071C28.304 25.2191 26.1339 27.2493 24.4573 29.6632C22.7808 32.077 21.6362 34.8195 21.0993 37.709C20.5623 40.5985 20.6453 43.569 21.3427 46.424C22.0401 49.279 23.3361 51.9533 25.1448 54.2698C26.9534 56.5863 29.2336 58.4922 31.8342 59.8612C34.4348 61.2302 37.2965 62.0312 40.23 62.2111C43.1634 62.391 46.1016 61.9457 48.85 60.9046C51.5984 59.8636 54.0943 58.2506 56.1725 56.1725L70.8449 70.8449Z"
+                  fill="#8A79FF"
+                />
+                <path
+                  d="M41.4998 83C48.3246 83 55.0439 81.3169 61.0628 78.0997C67.0817 74.8826 72.2142 70.2307 76.0058 64.5562C79.7974 58.8816 82.1311 52.3596 82.8 45.5677C83.4689 38.7759 82.4526 31.9239 79.8408 25.6186C77.2291 19.3134 73.1027 13.7496 67.8272 9.42007C62.5516 5.09051 56.2897 2.12885 49.5961 0.797414C42.9025 -0.534023 35.9839 -0.194132 29.453 1.78698C22.9222 3.76809 16.5999 7.47 12.1549 12.1551L24.8999 14.94L26.8274 26.8275C29.2403 24.4146 32.211 22.634 35.4764 21.6435C38.7419 20.6529 42.2012 20.483 45.548 21.1487C48.8948 21.8144 52.0257 23.2953 54.6635 25.46C57.3013 27.6248 59.3645 30.4067 60.6703 33.5593C61.9762 36.7119 62.4844 40.1379 62.1499 43.5339C61.8155 46.9298 60.6486 50.1908 58.7528 53.0281C56.857 55.8654 54.2908 58.1913 51.2813 59.7999C48.2719 61.4084 44.9122 62.25 41.4998 62.25L51.2813 71.38L41.4998 83Z"
+                  fill="url(#paint0_linear_346_2)"
+                />
+                <path
+                  d="M118.65 24.1C122.317 24.1 125.533 24.8167 128.3 26.25C131.1 27.6833 133.25 29.7333 134.75 32.4C136.283 35.0333 137.05 38.1 137.05 41.6C137.05 45.1 136.283 48.1667 134.75 50.8C133.25 53.4 131.1 55.4167 128.3 56.85C125.533 58.2833 122.317 59 118.65 59H106.45V24.1H118.65ZM118.4 53.05C122.067 53.05 124.9 52.05 126.9 50.05C128.9 48.05 129.9 45.2333 129.9 41.6C129.9 37.9667 128.9 35.1333 126.9 33.1C124.9 31.0333 122.067 30 118.4 30H113.45V53.05H118.4ZM140.49 45.05C140.49 42.25 141.04 39.7667 142.14 37.6C143.273 35.4333 144.79 33.7667 146.69 32.6C148.623 31.4333 150.773 30.85 153.14 30.85C155.207 30.85 157.007 31.2667 158.54 32.1C160.107 32.9333 161.357 33.9833 162.29 35.25V31.3H169.34V59H162.29V54.95C161.39 56.25 160.14 57.3333 158.54 58.2C156.973 59.0333 155.157 59.45 153.09 59.45C150.757 59.45 148.623 58.85 146.69 57.65C144.79 56.45 143.273 54.7667 142.14 52.6C141.04 50.4 140.49 47.8833 140.49 45.05ZM162.29 45.15C162.29 43.45 161.957 42 161.29 40.8C160.623 39.5667 159.723 38.6333 158.59 38C157.457 37.3333 156.24 37 154.94 37C153.64 37 152.44 37.3167 151.34 37.95C150.24 38.5833 149.34 39.5167 148.64 40.75C147.973 41.95 147.64 43.3833 147.64 45.05C147.64 46.7167 147.973 48.1833 148.64 49.45C149.34 50.6833 150.24 51.6333 151.34 52.3C152.473 52.9667 153.673 53.3 154.94 53.3C156.24 53.3 157.457 52.9833 158.59 52.35C159.723 51.6833 160.623 50.75 161.29 49.55C161.957 48.3167 162.29 46.85 162.29 45.15ZM183.177 35.6C184.077 34.1333 185.243 32.9833 186.677 32.15C188.143 31.3167 189.81 30.9 191.677 30.9V38.25H189.827C187.627 38.25 185.96 38.7667 184.827 39.8C183.727 40.8333 183.177 42.6333 183.177 45.2V59H176.177V31.3H183.177V35.6ZM212.791 59L203.391 47.2V59H196.391V22H203.391V43.05L212.691 31.3H221.791L209.591 45.2L221.891 59H212.791ZM258.405 59L250.855 47.25L244.005 59H236.105L247.105 41.4L235.955 24.1H244.005L251.555 35.8L258.355 24.1H266.255L255.305 41.65L266.455 59H258.405Z"
+                  fill="white"
+                />
+                <defs>
+                  <lineargradient
+                    id="paint0_linear_346_2"
+                    x1="41.4999"
+                    y1="0"
+                    x2="41.4999"
+                    y2="83"
+                    gradientunits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#CE4DA4" />
+                    <stop offset="1" stop-color="#CE4DA4" />
+                  </lineargradient>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          <div class="c-copyr__link">
+            <p class="c-copyr__text">
+              Copyright<sup>&#169;</sup> Dark X | Designed by
+              <a href="#">VishalUIUX</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?AIzaSyAm9CHZaUpHbSF3q18i-hQzQxfmaYkttNc&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <script src="./js/burger.js"></script>
+    <script src="./js/header__scroll.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/form.js"></script>
+    <script src="./js/location.js"></script>
+  </body>
+</html>

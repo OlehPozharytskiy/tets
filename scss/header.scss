@@ -1,0 +1,274 @@
+// ! Start HEADER
+
+.c-header {
+  position: relative;
+  width: 100%;
+  background-color: #13111a;
+  padding: 15px 0;
+  z-index: 100;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+  @media screen and (max-width: 1100px) {
+    padding: 0;
+  }
+
+  &::after {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    display: block;
+
+    background-color: #13111a;
+  }
+
+  &__wrapper {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+  }
+  &__fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+}
+
+// Start logo
+.e-logo {
+  z-index: 1;
+  width: 20%;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.5;
+  @media screen and (max-width: 1100px) {
+    width: 80%;
+  }
+  &__wrapper {
+    padding: 10px;
+    display: flex;
+  }
+  &__link {
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+
+  &__svg {
+    width: 100%;
+  }
+
+  &__coloor--blue {
+    fill: #8a79ff;
+  }
+
+  &__coloor--pink {
+    fill: #ce4da4;
+  }
+}
+// End logo
+
+// Start burger
+.e-header__burger {
+  display: none;
+  z-index: 1;
+  background: transparent;
+  border: none;
+  position: relative;
+  width: 40px;
+  height: 25px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  &::before {
+    top: 0;
+  }
+  &::after {
+    bottom: 0;
+  }
+  span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+
+  &.active {
+    &::before {
+      transform: rotate(45deg);
+      top: calc(50% - 1.5px);
+    }
+    &::after {
+      transform: rotate(-45deg);
+      bottom: calc(50% - 1.5px);
+    }
+    span {
+      transform: scale(0);
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    display: block;
+  }
+}
+.c-header__menu {
+  z-index: 1;
+  display: flex;
+  width: 80%;
+  align-items: center;
+  @media screen and (max-width: 1100px) {
+    overflow-y: auto;
+    display: none;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    // display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    padding-top: 160px;
+    padding-bottom: 30px;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(138.58deg, #ce4da4 1.52%, #8a79ff 100%);
+  }
+}
+
+// End burger
+
+// Start navigation
+
+.e-navigation {
+  width: 70%;
+  font-size: 25px;
+  line-height: 1.6;
+  @media screen and (max-width: 1100px) {
+    width: 100%;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style-type: none;
+    @media screen and (max-width: 1100px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-transform: uppercase;
+      font-size: 25px;
+    }
+
+    li {
+      padding: 5px 20px 5px 20px;
+    }
+
+    a:hover {
+      color: #8a79ff;
+    }
+  }
+}
+
+// End navigation
+
+//  Start sing in block
+.c-singin {
+  width: 30%;
+  @media screen and (max-width: 1100px) {
+    width: 100%;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap-reverse;
+    @media screen and (max-width: 1100px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.c-singin {
+  font-size: 25px;
+  line-height: 1.48;
+
+  &__link {
+    // margin-right: 25px;
+    margin: 10px 25px 10px 0;
+    @media screen and (max-width: 1100px) {
+      margin-right: 0;
+      text-transform: uppercase;
+      font-size: 25px;
+    }
+  }
+  a:hover {
+    color: #8a79ff;
+  }
+}
+// Start button
+.e-button {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  &__wrapper {
+    background: linear-gradient(
+      90deg,
+      #7353e5 0%,
+      #ce4da4 52.08%,
+      #ce4da4 100%
+    );
+    border-radius: 30px;
+    padding: 2px;
+  }
+
+  &__item {
+    background: #13111a;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 13px 32px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+  }
+
+  &__item:hover {
+    color: #8a79ff;
+    opacity: 0, 3;
+    box-shadow: 0px 20px 50px rgba(206, 77, 164, 0.5);
+  }
+
+  &__wrapper:active {
+    background: none;
+  }
+
+  &__item:active {
+    background: #302c3f;
+    color: #fff;
+    box-shadow: 0px -20px 50px rgba(71, 4, 49, 0.5);
+  }
+}
+// End button
+// End sing in block
+
+// ! End HEADER

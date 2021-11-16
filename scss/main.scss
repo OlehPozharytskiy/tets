@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition-delay: 250ms;
+}
+
+.error {
+  border-color: red;
+  box-shadow: inset 0 0 5px 5px red;
+}
+
+.animate {
+  color: #3079ed;
+  animation-name: shadow;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 2;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+@keyframes shadow {
+  0% {
+    text-shadow: 0 0px 15px #f0f;
+  }
+  33% {
+    text-shadow: 0 0px 15px #0ff;
+  }
+  66% {
+    text-shadow: 0 0px 10px #0f0;
+  }
+  100% {
+    text-shadow: 0 0px 10px #ff0;
+  }
+}

@@ -1,0 +1,82 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition-delay: 250ms;
+          transition-delay: 250ms;
+}
+
+.error {
+  border-color: red;
+  -webkit-box-shadow: inset 0 0 5px 5px red;
+          box-shadow: inset 0 0 5px 5px red;
+}
+
+.animate {
+  color: #3079ed;
+  -webkit-animation-name: shadow;
+          animation-name: shadow;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+}
+
+@-webkit-keyframes shadow {
+  0% {
+    text-shadow: 0 0px 15px #f0f;
+  }
+  33% {
+    text-shadow: 0 0px 15px #0ff;
+  }
+  66% {
+    text-shadow: 0 0px 10px #0f0;
+  }
+  100% {
+    text-shadow: 0 0px 10px #ff0;
+  }
+}
+
+@keyframes shadow {
+  0% {
+    text-shadow: 0 0px 15px #f0f;
+  }
+  33% {
+    text-shadow: 0 0px 15px #0ff;
+  }
+  66% {
+    text-shadow: 0 0px 10px #0f0;
+  }
+  100% {
+    text-shadow: 0 0px 10px #ff0;
+  }
+}
