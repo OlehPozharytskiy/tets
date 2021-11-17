@@ -23,8 +23,13 @@ p {
 a {
   text-decoration: none;
   color: white;
-  -webkit-transition-delay: 250ms;
-          transition-delay: 250ms;
+  -webkit-transition: all 0.5s cubic-bezier(0.73, 0.45, 0.15, 0.99);
+  transition: all 0.5s cubic-bezier(0.73, 0.45, 0.15, 0.99);
+}
+
+button {
+  -webkit-transition: all 0.5s cubic-bezier(0.73, 0.45, 0.15, 0.99);
+  transition: all 0.5s cubic-bezier(0.73, 0.45, 0.15, 0.99);
 }
 
 .error {
