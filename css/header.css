@@ -115,11 +115,11 @@
 }
 
 .e-logo__link:hover span {
-  color: #8a79ff;
-  -webkit-animation-name: scale;
-          animation-name: scale;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  color: #3079ed;
+  -webkit-animation-name: focus;
+          animation-name: focus;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
   -webkit-animation-delay: 0s;
@@ -132,33 +132,31 @@
           animation-fill-mode: none;
 }
 
-@-webkit-keyframes scale {
+@-webkit-keyframes focus {
   0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(0.2);
-    transform: scale(0.2);
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
   }
   100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
   }
 }
 
-@keyframes scale {
+@keyframes focus {
   0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(0.2);
-    transform: scale(0.2);
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
   }
   100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
   }
 }
 
